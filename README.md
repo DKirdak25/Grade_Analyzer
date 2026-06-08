@@ -1,122 +1,149 @@
-Student Grade Analyzer
+# 📊 Grade Analyzer
 
-A simple Python project that analyzes student marks and demonstrates software engineering fundamentals such as testing, mocking, input validation, and project structure.
+![Python](https://img.shields.io/badge/Python-3-blue?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
-Features
+A powerful Python automation project that analyzes student grades and provides comprehensive statistical insights for educators.
 
-- Calculate average marks
-- Find highest mark
-- Find lowest mark
-- Count passed students
-- Input validation
-- Automated unit tests
-- Mocked user input testing
+## ✨ Features
 
-Project Structure
+- 📈 **Calculate Average Marks** - Compute the mean grade across all students
+- 🏆 **Find Highest Mark** - Identify the top score in the class
+- 📉 **Find Lowest Mark** - Locate the lowest score
+- ✅ **Count Passed Students** - Determine how many students passed (score ≥ 50)
+- 🛡️ **Input Validation** - Robust error handling and validation
+- 🧪 **Automated Unit Tests** - Comprehensive test coverage
+- 🎭 **Mock Testing** - Advanced testing with mocked inputs
+- ⚙️ **CI/CD Integration** - GitHub Actions workflow included
 
-Automation_Project/
+## 📂 Project Structure
+
+```
+Grade_Analyzer/
 │
-├── logic.py
-├── interface.py
-├── test_analyzer.py
-├── README.md
+├── logic.py                 # Core analyzer logic
+├── interface.py             # User interface
+├── test_analyzer.py         # Unit tests
+├── README.md               # Project documentation
 └── .github/
     └── workflows/
-        └── python-tests.yml
+        └── python-tests.yml # GitHub Actions workflow
+```
 
-How It Works
+## 🔧 How It Works
 
-The project is separated into two parts:
+### Business Logic (`logic.py`)
 
-Business Logic ("logic.py")
+The **Analyzer** class handles all grade analysis:
+- Calculates average, highest, and lowest marks
+- Counts students who passed (score ≥ 50)
+- Validates input data
+- Manages student grade collections
 
-Contains the "Analyzer" class responsible for:
+### User Interface (`interface.py`)
 
-- Calculating average marks
-- Finding highest mark
-- Finding lowest mark
-- Counting passed students
-- Validating constructor input
+Handles user interaction:
+- Prompts for student grades
+- Validates user input
+- Displays formatted results
+- Manages error recovery
 
-User Interface ("interface.py")
+**Architecture Benefits**: Clean separation of concerns makes the code testable, maintainable, and scalable.
 
-Handles:
+## 🚀 Quick Start
 
-- User input
-- Input validation
-- Displaying analysis results
+### Running the Application
 
-This separation makes the code easier to test and maintain.
+```bash
+python interface.py
+```
 
-Example
+### Example Usage
 
-Input:
-
+**Input:**
+```
 Enter Marks of Student: 30
 Enter Marks of Student: 90
+Enter Marks of Student: 75
 Enter Marks of Student: q
+```
 
-Output:
-
-Average : 60.0
+**Output:**
+```
+Average : 65.0
 Lowest : 30
 Highest : 90
-Passed Students : 1
+Passed Students : 2
+```
 
-Running the Application
+## 🧪 Testing
 
-python interface.py
+### Run All Tests
 
-Running Tests
-
+```bash
 python -m unittest test_analyzer.py
+```
 
-or
+Or run all tests in the project:
 
+```bash
 python -m unittest
+```
 
-Test Coverage
+### Test Coverage
 
-The test suite verifies:
+The test suite validates:
+- ✓ Average calculation accuracy
+- ✓ Highest/lowest mark identification
+- ✓ Passed student counting
+- ✓ Invalid data type handling
+- ✓ Empty list edge cases
+- ✓ User input handling
+- ✓ Input recovery mechanisms
+- ✓ Mocked keyboard input scenarios
 
-- Average calculation
-- Highest mark calculation
-- Lowest mark calculation
-- Passed student count
-- Invalid data types
-- Empty mark lists
-- User input handling
-- Invalid input recovery
-- Mocked keyboard input
+## 🛠️ Technologies & Concepts
 
-Technologies Used
+### Technologies
+- **Python 3** - Core language
+- **unittest** - Testing framework
+- **unittest.mock** - Input mocking
+- **Git & GitHub** - Version control
+- **GitHub Actions** - CI/CD automation
 
-- Python 3
-- unittest
-- unittest.mock
-- Git
-- GitHub
-- GitHub Actions
+### Concepts Practiced
+- 🎯 Object-Oriented Programming (OOP)
+- ✔️ Input Validation
+- 🏗️ Separation of Concerns
+- 🧪 Unit Testing
+- 🔄 Test Automation
+- 🎭 Mocking
+- ⚡ Continuous Integration (CI)
 
-Concepts Practiced
+## 🔮 Future Enhancements
 
-- Object-Oriented Programming (OOP)
-- Input Validation
-- Separation of Concerns
-- Unit Testing
-- Test Automation
-- Mocking
-- Continuous Integration (CI)
+- [ ] Grade classification (A, B, C, D, F)
+- [ ] Student names and ID support
+- [ ] File storage and persistence
+- [ ] CSV import/export functionality
+- [ ] Graphical user interface (GUI)
+- [ ] Percentage-based analysis
+- [ ] Student performance statistics
+- [ ] Batch processing
 
-Future Improvements
+## 📝 License
 
-- Grade classification (A, B, C, D, F)
-- Student names support
-- File storage
-- CSV import/export
-- Graphical user interface
-- Percentage analysis
+This project is open source and available under the MIT License.
 
-Author
+## 👨‍💻 Author
 
-Built as a learning project to practice Python programming, testing, automation, and GitHub Actions.
+Built as a learning project to master:
+- Python programming fundamentals
+- Software testing and automation
+- GitHub Actions and CI/CD
+- Professional project structure
+
+---
+
+**Contributing**: Contributions, issues, and feature requests are welcome! Feel free to check the [issues](https://github.com/DKirdak25/Grade_Analyzer/issues) page.
